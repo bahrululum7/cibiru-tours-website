@@ -1,0 +1,158 @@
+/* ===== HOME VIDEO ===== */
+.video-wrapper {
+  position: relative;
+  width: 100vw;
+  aspect-ratio: 16/9; /* RESPONSIVE height */
+  overflow: hidden;
+}
+
+.video-wrapper,
+.video-wrapper .w-background-video,
+.video-wrapper .w-background-video-atom,
+.video-wrapper video {
+  position: absolute !important;
+  inset: 0;
+  width: 100% !important;
+  height: 110% !important;
+  object-fit: cover;
+  border-radius: inherit;
+  z-index: 1 !important;
+}
+
+.video-wrapper::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.video-content {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical center */
+  align-items: center; /* horizontal center */
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-align: center; /* text centered */
+  padding: 1rem;
+}
+
+.video-content h1 {
+  font-family: 'ITC Giovanni Bold', serif;
+  font-size: clamp(2rem, 5vw, 4rem); /* responsive */
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.video-content h2 {
+  opacity: 0.95;
+  font-size: clamp(1rem, 2vw, 1.8rem); /* responsive */
+}
+
+/* ======================================
+   📱 RESPONSIVE MEDIA QUERIES
+   ====================================== */
+
+/* ===== Mobile (≤ 600px) ===== */
+@media (max-width: 600px) {
+  .logoCurtain {
+    width: 45vw;
+  }
+
+  .video-content h1 {
+    font-size: 2rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .top-center-box {
+    width: 160px;
+    height: 80px;
+  }
+
+  .right-text {
+    font-size: 12px;
+    left: 18vw;
+  }
+}
+
+/* ===== Tablet (600px – 1024px) ===== */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .video-content h1 {
+    font-size: 2.5rem;
+  }
+  .top-center-box {
+    width: 200px;
+    height: 100px;
+  }
+  .right-text {
+    font-size: 14px;
+  }
+}
+
+/* ===== Desktop Large (≥ 1600px) ===== */
+@media (min-width: 1600px) {
+  .video-content h1 {
+    font-size: 4rem;
+  }
+  .top-center-box {
+    width: 300px;
+    height: 150px;
+  }
+  .right-text {
+    font-size: 20px;
+  }
+}
+
+/* RENT */
+.rent-text h1 {
+  font-family: 'ITC Giovanni Bold', serif;
+}
+
+/* Gambar ke-1 */
+.rent-img-0 {
+  object-position: center top;
+  transform: scale(0.7);
+  top: 60px;
+}
+
+/* Gambar ke-2 */
+.rent-img-1 {
+  object-fit: contain !important;
+  object-position: center top;
+  top: 10px;
+  transform: scale(0.6);
+}
+
+/* Gambar ke-3 */
+.rent-img-2 {
+  object-fit: contain !important;
+  object-position: center top;
+  scale: 1.1;
+  top: -50px;
+  transform: rotate(10deg) translateX(10px);
+}
+
+/* Gambar ke-4 */
+.rent-img-3 {
+  object-fit: contain !important;
+  object-position: center top;
+  transform: scale(0.5);
+  top: 30px;
+}
+
+/* Gambar ke-5 */
+.rent-img-4 {
+  object-position: center top;
+  transform: scale(0.8);
+  top: 60px;
+}
+.footerTitle {
+  font-family: 'ITC Giovanni Bold', serif;
+}
