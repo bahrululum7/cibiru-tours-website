@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/cibiru-tours-website/static/css/main.0b39e21c.css",
-    "main.js": "/cibiru-tours-website/static/js/main.7ac6f18f.js",
+    "main.js": "/cibiru-tours-website/static/js/main.1e394c0c.js",
     "index.html": "/cibiru-tours-website/index.html",
     "main.0b39e21c.css.map": "/cibiru-tours-website/static/css/main.0b39e21c.css.map",
-    "main.7ac6f18f.js.map": "/cibiru-tours-website/static/js/main.7ac6f18f.js.map"
+    "main.1e394c0c.js.map": "/cibiru-tours-website/static/js/main.1e394c0c.js.map"
   },
   "entrypoints": [
     "static/css/main.0b39e21c.css",
-    "static/js/main.7ac6f18f.js"
+    "static/js/main.1e394c0c.js"
   ]
 }
